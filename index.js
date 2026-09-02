@@ -27,7 +27,7 @@ let persion = {
 persion.name = "Adamu";
 //Bracket Notation
 let selection = "job";
-persion["job"] = "developer";
+persion[selection] = "developer";
 console.log(persion.name);
 console.log(persion.job);
 //Arrays
