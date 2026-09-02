@@ -30,3 +30,21 @@ let selection = "job";
 persion["job"] = "developer";
 console.log(persion.name);
 console.log(persion.job);
+//Arrays
+let selectedColors = ["red","blue"];
+selectedColors[2] = "green";
+selectedColors[3] = 10;
+console.log(selectedColors);
+console.log(selectedColors.length);
+
+//Functions
+function greet(firstname, lastName){
+    console.log("Hello, "+ firstname + " " + lastName);
+}
+greet("Garba", "Umar");
+
+function square(number){
+    return number * number;
+}
+
+console.log(square(4));
