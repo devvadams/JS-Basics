@@ -6,6 +6,14 @@ const student = {
  isGraduated : true
 
 }
+const student1 = {
+ name : "Okaku",
+ age : 24,
+ course : "Public Admin",
+ score : 34,
+ isGraduated : false
+
+}
 
 console.log(
     
@@ -85,8 +93,11 @@ function displayStudentProfile(student) {
     Grade: ${getGrade(student.score)}
     Status: ${getStudentStatus(student)}`;    
 }
+
 const profile = displayStudentProfile(student);
 console.log(profile);
+const profile1 = displayStudentProfile(student1);
+console.log(profile1);
 
 console.log("-1:", getGrade(-1));
 
