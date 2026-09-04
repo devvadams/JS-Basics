@@ -11,9 +11,13 @@ const student1 = {
  age : 24,
  course : "Public Admin",
  score : 34,
- isGraduated : false
+ isGraduated : false    
 
 }
+
+const students = [
+      student,student1
+];
 
 console.log(
     
@@ -81,8 +85,7 @@ console.log("Status:", getStudentStatus(student));
 
 function displayStudentProfile(student) {
 
-    return `
-    ${greetStudent(student.name)} 
+    return `${greetStudent(student.name)} 
 
     Student profile
     ---------------------------
@@ -99,6 +102,26 @@ console.log(profile);
 const profile1 = displayStudentProfile(student1);
 console.log(profile1);
 
+console.log(students[0].name);
+console.log(students[1].name);
+
+console.log(students[0].score);
+console.log(students[1].score);
+
+console.log(getGrade(students[0].score));
+console.log(getGrade(students[1].score));
+
+console.log(getStudentStatus(students[0]));
+console.log(getStudentStatus(students[1]));
+
+console.log(displayStudentProfile(students[0]));
+console.log(displayStudentProfile(students[1]));
+
+console.log("-------For Loop--------");
+
+for( const student of students){
+    console.log(`${student.name} - ${getGrade(student.score)} - ${getStudentStatus(student)}`);
+}
 console.log("-1:", getGrade(-1));
 
 console.log("75:", getGrade(75));
